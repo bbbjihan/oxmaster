@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/oxmaster/static/css/main.31d6cfe0.css",
-    "main.js": "/oxmaster/static/js/main.87d1c73a.js",
+    "main.js": "/oxmaster/static/js/main.baf665c2.js",
     "index.html": "/oxmaster/index.html",
-    "main.87d1c73a.js.map": "/oxmaster/static/js/main.87d1c73a.js.map"
+    "main.baf665c2.js.map": "/oxmaster/static/js/main.baf665c2.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.87d1c73a.js"
+    "static/js/main.baf665c2.js"
   ]
 }
