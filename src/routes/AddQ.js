@@ -1,20 +1,21 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
+import { dbService } from "../myBase";
 
 const AddQ = () => {
-    const [question, setQuestion] = useState("");
-    const onSubmit = (event) => {
-        event.preventDefault();
+    const [questions, setQuestions] = useState(['a','b','c']);
+    const nextQuestion = useRef(1);
+
+    const onChange = (index) => {
+        let tmp = questions[index];
     };
-    const onChange = (event) => {
-        const {target:{value}} = event;
-        setQuestion(value);
-    };
+
     return (
         <div>
-            <form onSubmit={onSubmit}>
-                <input value={question} onChange={onChange} type="text" placeholder="문제를 작성해주세요!" maxLength={120}/>
-                <input type="submit" value="문제 출제" />
-            </form>
+            {questions.map((question, index) => {
+            return(<div>
+                문제{index+1}:
+                <input onChange={onChange(index)} value={question}/>
+            </div>)})}
         </div>
     );
 };

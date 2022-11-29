@@ -7,6 +7,9 @@ const Profile = () => {
     }
     return (
     <>
+        <img src={authService.currentUser.photoURL}/><br/>
+        이름: {authService.currentUser.displayName}<br/>
+        EMAIL: {authService.currentUser.email}<br/><br/>
         <button onClick={onLogOutClick}>
             로그아웃
         </button>
